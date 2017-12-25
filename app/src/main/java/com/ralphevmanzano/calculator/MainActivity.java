@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
 
                 hasOperation = true;
                 canOperate = false;
-            } else if (!canOperate && !getLastChar().equals(")")) {
+            } else if (!canOperate && !getLastChar().equals(")") && !getLastChar().equals("0")) {
                 if (editTextInput.getText().length() > 0) {
                     editTextInput.getText().replace(getInputLength() - 1, getInputLength(), b.getText().toString());
                 }
